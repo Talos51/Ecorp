@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet1_rep" activeCheck="true">
+  <goals>
+  </goals>
+  <nextMission>Evil/02EvilContract.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - part 2">
+	Join the conjoint op "TakeDown" with fSociety to shutdown the ECorp network	  
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>RE: OP TakeDown - Ecorp Webserver SUCCESS</subject>
+    <body>
+Congratz #PLAYERNAME#,
+
+Now their webserver is done, we can target their mainframe ! You'll shortly receive your next assignment !
+
+-fSociety
+    </body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

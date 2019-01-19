@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet5">
+  <goals>
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Content.xnb" path="ARCHIVE/ECorp/28-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Content.xnb" path="ARCHIVE/ECorp/14-12" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Content.xnb" path="ARCHIVE/ECorp/21-09" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorpDatabase.sql" path="ARCHIVE/ECorp/27-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorpDatabase.sql" path="ARCHIVE/ECorp/13-12" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorpDatabase.sql" path="ARCHIVE/ECorp/20-09" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/26-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/12-12" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/19-09" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/26-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_mediakit.zip" path="ARCHIVE/Misc" />
+  </goals>
+  <nextMission>Evil/Continuations/05EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - final part">
+	Join the conjoint op "TakeDown" with fSociety to shutdown the ECorp network
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Steel Mountains Final Strike </subject>
+    <body>
+#PLAYERNAME#,
+
+We need to strike one last time. Delete all remains of Ecorp network, we must take down their Offline Backup server known as "Steel Mountains".
+
+Reply when you're done.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpOfflineBackup" />
+		<note title="Mission Steel Mountains Goals">Goals :
+- Gain admin access on Steel Mountains Backup
+- Delete all remain files of ECorp
+- Reply</note>
+    </attachments>
+  </email>
+</mission>

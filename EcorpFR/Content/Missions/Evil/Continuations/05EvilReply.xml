@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet5_rep" activeCheck="true">
+  <goals>
+  </goals>
+  <nextMission>Evil/Continuations/06EvilFinalReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown avec fSociety - partie finale">
+	Rejoignez l'operation "TakeDown" avec fSociety pour mettre un terme au reseau d'ECorp
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>RE: OP TakeDown - Attaque Finale sur Steel Mountains SUCCES</subject>
+    <body>
+Bien joue #PLAYERNAME#,
+
+C'est fini.... ECorp est officiellement mort... Merci #PLAYERNAME#... Nous reviendrons vers vous en temps voulu, ne gâchez pas votre talent...
+
+-fSociety
+    </body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

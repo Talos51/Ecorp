@@ -1,0 +1,71 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<Computer id="ECorpColby" name="Evil Corp - T. Colby's Laptop" ip="10.0.0.100" security="4" type="2" icon="laptop" > 
+
+  <!-- Accounts -->
+  <adminPass pass="tcolbycomputer" />
+	
+  <account username="tcolby" password="colbyH4xx0R" type="0" />
+  <!-- Adds an account to this computer.
+  Type represents it's privileges :
+  ADMIN = 0;
+  ALL = 1;
+  MAIL = 2;
+  MISSIONLIST = 3;
+  -->
+
+  <!-- Security Stuff -->
+  <ports>80, 22, 21, 25</ports>
+  <proxy time="2" /> <!-- Proxy server. Set value to -1 to make it disappear -->
+  <portsForCrack val="4" /> <!-- Number of ports to be open to allow porthack to run -->
+  <firewall level="8" solution="Ev1LClb" additionalTime="1.0"/>
+  <trace time="-1" />
+	
+  <!-- Network Stuff -->
+  <dlink target="ECorpDrop" />
+  <dlink target="ECorpMail" />
+	
+  <positionNear target="ECorpDrop" position="1" total="1" />
+  
+	<!-- Files -->
+	<file path="bin" name="install.bin">#BINARYSMALL#</file>
+	<encryptedFile path="home/ECorp" name="ECorp_Report.dec" extension=".txt" ip="10.0.0.15" header="ECorp Report #1" pass="Ev1L">
+	The series follows Elliot Alderson, a young man living in New York City, who works at Allsafe as a cyber security engineer.
+Elliot has social anxiety disorder, but connects to people by hacking them and acts as a cyber vigilante.
+
+	He is recruited by a mysterious social-anarchist known as "Mr. Robot", and joins his team of hackers, known as "fsociety".
+One of their missions is to take down one of the largest corporations in the world, E Corp (known as "Evil Corp" by Elliot), a company that Elliot is paid to protect.
+	</encryptedFile>
+
+	<encryptedFile path="home/ECorp" name="ECorp_Report_Pass.dec" ip="10.0.0.15" header="ECorp Report Password">
+I told them that I always forget the password for reports.... It's simply Ev1L ... even babies could remember it....
+	</encryptedFile>
+  
+	<encryptedFile path="home" name="ECorpBackupStatus.dec" ip="10.0.0.50" header="Steel Mountains Backup - Status" pass="SteelReport">
+Steel Mountains Backup - Status
+---------------------------------------------------------
+0. Backup name : Ecorp.com
+1. Backup uptime : 99.98%
+2. Backup size : 25288767438848 Kb
+3. Backup date : 2015/06/24
+---------------------------------------------------------		
+	</encryptedFile>
+
+<!-- Adding this section will create a second computer on load, attached to this
+  which is an eos device, all set up, with these files on it.
+  It'll also automatically generate some apps and save files and things for flavor.-->
+<eosDevice name="T. Colby's ePad 4" id="ColbyEosPad" icon="tablet">
+  <mail username="tcolby@ecorp.com" pass="colbyH4xx0R" />
+  <note>Terry Colby ePad 4 - Ecorp.com </note>
+  <note>Steel Mountains Backup - Information
+---------------------------------------------------------
+0. Backup report   : EcorpBackupStatus.dec
+1. Backup password : SteelReport
+---------------------------------------------------------</note>
+</eosDevice>
+
+</Computer>

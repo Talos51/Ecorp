@@ -1,0 +1,38 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<Computer id="ECorpOfflineBackup" name="Steel Moutains Offline Backup" security="5" ip="10.0.0.50" type="4" icon="chip">
+	
+  <admin type="fast" resetPassword="true"/>
+
+  <portsForCrack val="6" />
+
+  <proxy time="5" />
+  <ports>80, 22, 1433, 25, 21, 104</ports>
+  <firewall level="8" solution="EV1LB4CK" additionalTime="0"/>
+  <trace time="75" />
+  
+  <dlink target="ECorpServ" />
+  
+  <positionNear target="ECorpServ" position="15" total="1" />
+  
+  <!-- Files -->
+  <file path="ARCHIVE/ECorp/28-05" name="ECorp_Content.xnb">#BINARYSMALL#</file>
+  <file path="ARCHIVE/ECorp/27-05" name="ECorpDatabase.sql">#BINARYSMALL#</file>
+  <file path="ARCHIVE/ECorp/26-05" name="ECorp_Files.zip">#BINARYSMALL#</file>
+
+  <file path="ARCHIVE/ECorp/14-12" name="ECorp_Content.xnb">#BINARYSMALL#</file>
+  <file path="ARCHIVE/ECorp/13-12" name="ECorpDatabase.sql">#BINARYSMALL#</file>
+  <file path="ARCHIVE/ECorp/12-12" name="ECorp_Files.zip">#BINARYSMALL#</file>
+
+  <file path="ARCHIVE/ECorp/21-09" name="ECorp_Content.xnb">#BINARYSMALL#</file>
+  <file path="ARCHIVE/ECorp/20-09" name="ECorpDatabase.sql">#BINARYSMALL#</file>
+  <file path="ARCHIVE/ECorp/19-09" name="ECorp_Files.zip">#BINARYSMALL#</file>
+  
+  <file path="ARCHIVE/Misc" name="ECorp_mediakit.zip">#BINARYSMALL#</file>
+  <file path="ARCHIVE/Misc" name="templates.tmp">#BINARYSMALL#</file>
+
+</Computer>

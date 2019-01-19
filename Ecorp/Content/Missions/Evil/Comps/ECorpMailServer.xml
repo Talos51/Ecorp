@@ -1,0 +1,76 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<Computer id="ECorpMail" name="Evil Corp Mail Server" security="5" ip="10.0.0.20" type="1">
+
+  <adminPass pass="BTqn6s1NKt" />
+
+  <ports>80, 22, 1433, 25, 21</ports>
+  <proxy time="4" /> <!-- Proxy server. Set value to -1 to make it disappear -->
+  <portsForCrack val="5" /> <!-- Number of ports to be open to allow porthack to run -->
+  <firewall level="10" solution="Ev1LM4il" additionalTime="0"/>
+<!-- Adds a firewall - set level to -1 to remove it.
+	Solution is the solution the player will need to find to break it, 
+	the level should ideally be equal to the solution length, but can be longer
+	(Not shorter though!) - additional time is the nonstandard extra evaluation time per step that the hacknet solver will need-->
+  <trace time="100" /> <!-- Adds a trace timer - set to -1 to remove -->
+
+  <dlink target="ECorpServ" />
+  <positionNear target="ECorpServ" position="5" total="1" />
+  
+  <!-- accounts stuff -->
+  <account username="tcolby" password="colbyH4xx0R" type="2" />
+  <account username="twellick" password="CTOIsMine" type="2" />
+  
+  <mailServer name="Evil Corp Mail" color="204,116,212">
+    <email recipient="twellick" sender="tcolby" subject="[URGENT] DDoS Issues">
+Tyrell,
+
+Let me first say that these DDoS issues must be stop. We've a planned meeting with AllSafe next week, it'll be the right place to get information.
+
+More updates soon to come,
+Keep up the good work,
+-TC, ECorp CTO
+    </email>
+	
+  <email recipient="tcolby" sender="twellick" subject="RE: [URGENT] DDoS Issues">
+Yes sir.
+	  
+-TW, ECorp Senior VP of Technology
+------------------------------------------------------------
+	  Tyrell,
+	  
+	  Let me first say that these DDoS issues must be stop. We've a planned meeting with AllSafe next week, it'll be the right place to get information.
+	  
+	  More updates soon to come,
+	  Keep up the good work,
+	  -TC, ECorp CTO
+  </email>
+    
+    <email recipient="tcolby" sender="tcolby" subject="SENT: [ALL]Good Work">
+** SENT : **
+------------------------------
+Hi fellow ECorp workers,
+Our engineers are done with the new project, so chill out !
+
+Keep up the good work,
+-TC, ECorp CTO
+    </email>
+    
+
+
+	
+  <email recipient="twellick" sender="jwellick@jmail.com" subject="Re:Come Late">
+OK;
+XOXO. J
+------------------------------------------------------------
+	  Hard work here, come late tonight.
+	  Love. T
+  </email>
+
+  </mailServer>
+  
+</Computer>

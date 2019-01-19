@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet1">
+  <goals>
+	<goal type="FileDownload" target="fSociety" file="fsociety.dat" path="home" />
+	<goal type="getAdmin" target="ECorpWeb"/>
+	<goal type="FileDeletion" target="ECorpWeb" file="index.html" path="web" />
+	<goal type="FileUpload" target="fSociety" file="fsociety.dat" path="home" destTarget="ECorpWeb" destPath="home" />
+
+  </goals>
+  <nextMission>Evil/Continuations/01EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown avec fSociety - partie 2">
+	Rejoignez l'operation "TakeDown" avec fSociety pour mettre un terme au reseau d'ECorp
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Serveur web Ecorp</subject>
+    <body>
+#PLAYERNAME#,
+
+Maintenant que vous avez lu le fichier vous connaissez la cible, Ecorp...
+Ecorp... c'est trop long a explique mais... Nous avons besoin de vous pour mettre hors service leur serveur web.
+Vous trouverez sur notre serveur tous les outils dont vous pourriez avoir besoin pour soutenir notre cause.
+Vous trouverez aussi un fichier nomme fsociety.dat dans le repertoire home/ .
+
+Obtenez un acces administrateur sur leur serveur web, supprimez leur fichier index.html, une fois leur serveur hors service, uploadez le fichier fsociety.dat dans leur repertoire home/, de cette façon ils sauront qu'ils ne sont desormais plus intouchables.
+
+Repondez une fois la tache accomplie.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpWeb" />
+		<note title="Mission Ecorp Webserver Goals">Buts :
+- Obtenir l'acces administrateur du serveur web
+- Supprimer index.html
+- Uploader fsociety.dat dans home/</note>
+    </attachments>
+  </email>
+</mission>

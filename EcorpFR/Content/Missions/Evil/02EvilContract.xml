@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet2">
+  <goals>
+	<goal type="getString" target="hLuOj85Esp"/>
+  </goals>
+  <nextMission>Evil/Continuations/02EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown avec fSociety - partie 3">
+	Rejoignez l'operation "TakeDown" avec fSociety pour mettre un terme au reseau d'ECorp
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Serveur central Ecorp</subject>
+    <body>
+#PLAYERNAME#,
+
+Le serveur web d'ECorp etait seulement le sommet visible de l'iceberg, leur serveur central est toujours en service et nous devons trouver un moyen d'en prendre le controle afin de decouvrir l'etendu de leur reseau.
+Essayez de fouiller plus en profondeur sur le serveur web afin de trouver leur serveur central ainsi que le mot de passe administrateur.
+
+Repondez avec le mot de passe une fois la tache accomplie.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpWeb" />
+		<note title="Mission Ecorp Hub Goals">Buts :
+- Acces administrateur au serveur central
+- Repondre avec le mot de passe administrateur</note>
+    </attachments>
+  </email>
+</mission>

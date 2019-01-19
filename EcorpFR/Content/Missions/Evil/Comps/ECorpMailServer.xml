@@ -1,0 +1,76 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<Computer id="ECorpMail" name="Evil Corp Serveur Mail" security="5" ip="10.0.0.20" type="1">
+
+  <adminPass pass="BTqn6s1NKt" />
+
+  <ports>80, 22, 1433, 25, 21</ports>
+  <proxy time="4" /> <!-- Proxy server. Set value to -1 to make it disappear -->
+  <portsForCrack val="5" /> <!-- Number of ports to be open to allow porthack to run -->
+  <firewall level="10" solution="Ev1LM4il" additionalTime="0"/>
+<!-- Adds a firewall - set level to -1 to remove it.
+	Solution is the solution the player will need to find to break it, 
+	the level should ideally be equal to the solution length, but can be longer
+	(Not shorter though!) - additional time is the nonstandard extra evaluation time per step that the hacknet solver will need-->
+  <trace time="100" /> <!-- Adds a trace timer - set to -1 to remove -->
+
+  <dlink target="ECorpServ" />
+  <positionNear target="ECorpServ" position="5" total="1" />
+  
+  <!-- accounts stuff -->
+  <account username="tcolby" password="colbyH4xx0R" type="2" />
+  <account username="twellick" password="CTOIsMine" type="2" />
+  
+  <mailServer name="Evil Corp Mail" color="204,116,212">
+    <email recipient="twellick" sender="tcolby" subject="[URGENT] Problemes de DDoS">
+Tyrell,
+
+Laissez moi tout d'abord vous dire que ces attaques DDoS doivent cessees. Nous avons un rendez-vous avec Allsafe la semaine prochaine, ce sera l'occasion d'obtenir de plus amples informations.
+
+Je vous tiens au courant,
+Continuez le bon travail,
+-TC, CdT ECorp
+    </email>
+	
+  <email recipient="tcolby" sender="twellick" subject="RE: [URGENT] Problemes de DDoS">
+Oui monsieur.
+	  
+-TW, Vice-President Senior de la Technologie ECorp
+------------------------------------------------------------
+	  Tyrell,
+	  
+	  Laissez moi tout d'abord vous dire que ces attaques DDoS doivent cessees. Nous avons un rendez-vous avec Allsafe la semaine prochaine, ce sera l'occasion d'obtenir de plus amples informations.
+	  
+	  Je vous tiens au courant,
+	  Continuez le bon travail,
+	  -TC, CdT ECorp
+  </email>
+    
+    <email recipient="tcolby" sender="tcolby" subject="SENT: [ALL] Bon travail">
+** ENVOYE : **
+------------------------------
+Bonjour chers travailleurs,
+Nos ingenieurs en ont fini avec le tout dernier projet, alors reposez vous !
+
+Continuez le bon travail,
+-TC, CdT ECorp
+    </email>
+    
+
+
+	
+  <email recipient="twellick" sender="jwellick@jmail.com" subject="Re:Rentrerais tard">
+OK;
+Bisous J
+------------------------------------------------------------
+	  Beaucoup de travail ici, rentrerais tard ce soir.
+	  Je t'aime. T
+  </email>
+
+  </mailServer>
+  
+</Computer>

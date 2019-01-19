@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet0_rep" activeCheck="true">
+  <goals>
+  </goals>
+  <!-- <missionEnd val="1">addRank</missionEnd> -->
+  <nextMission>Evil/01EvilContract.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety">
+	Join the conjoint op "TakeDown" with fSociety to shutdown the ECorp network	  
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>RE: OP TakeDown - First Contact SUCCESS</subject>
+    <body>
+Congratz #PLAYERNAME#,
+
+Our system has detected a copy of "home/target.txt" let's hope you're the right person...
+The next mail you're about to receive will give you further information. Welcome to fSociety...
+
+-fSociety
+    </body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

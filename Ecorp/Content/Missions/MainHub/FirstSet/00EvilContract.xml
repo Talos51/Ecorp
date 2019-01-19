@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet0">
+  <goals>
+	<goal type="FileDownload" target="fSociety" file="target.txt" path="home" />
+    <!-- 
+	<goal type="FileDeletion" target="idComp" file="#XXX#" path="#XXX#" />
+	<goal type="getAdmin" target="idComp"/>
+	<goal type="FileUpload" target="idComp" file="#XXX#" path="#XXX#" destTarget="idComp" destPath="Drop/Uploads" />
+	<goal type="getString" target="#XXX#"/>
+	-->
+  </goals>
+  <nextMission>Evil/Continuations/00EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety">
+	Join the conjoint op "TakeDown" with fSociety to shutdown the ECorp network
+  </posting>
+  <email>
+    <sender>CSEC Hub Services</sender>
+    <subject>OP TakeDown - First Contact</subject>
+    <body>
+Hey #PLAYERNAME#,
+
+This is a unusual situation but... fSociety an allied hacker team requested reinforcements for his "TakeDown" operation.
+They're running this operation against Ecorp, a multinational corporation, you must have heard about them ... no ? Well....
+
+First you must get in touch with fSociety, login on their Assets server and download the file "target.txt" .
+
+Read the file and reply when you're done.
+
+Thanks!
+    </body>
+    <attachments>
+		<link comp="fSociety" />
+		<account comp="fSociety" user="admin" pass="fSoci3ty" />  <!-- type="0" -->
+		<note title="fSociety info">File to get : target.txt</note>
+    </attachments>
+  </email>
+</mission>

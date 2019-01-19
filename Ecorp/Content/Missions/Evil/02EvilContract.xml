@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet2">
+  <goals>
+	<goal type="getString" target="hLuOj85Esp"/>
+  </goals>
+  <nextMission>Evil/Continuations/02EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - part 3">
+	Join the conjoint op "TakeDown" with fSociety to shutdown the ECorp network
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Ecorp Hub</subject>
+    <body>
+#PLAYERNAME#,
+
+The Ecorp webserver was only the tip of the iceberg, their hub server is still up and we need to gain an admin access on to discover how big is the Ecorp network.
+Try to dig deeper from the Ecorp webserver to find the Ecorp hub and gain admin access then give us the password.
+
+Reply with admin password when you're done.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpWeb" />
+		<note title="Mission Ecorp Hub Goals">Goals :
+- Gain admin access on Ecorp hub Server
+- Reply with admin password</note>
+    </attachments>
+  </email>
+</mission>

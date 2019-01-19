@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet3">
+  <goals>
+	<goal type="FileDeletion" target="ECorpDrop" file="ECorp_Report.err" path="Drop/Uploads" />
+  </goals>
+  <nextMission>Evil/Continuations/03EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown avec fSociety - partie 4">
+	Rejoignez l'operation "TakeDown" avec fSociety pour mettre un terme au reseau d'ECorp
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Rapport perdu</subject>
+    <body>
+#PLAYERNAME#,
+
+Nous avons eu acces a leur serveur central et nous savons a present que leur Directeur de la Technologie, Terry Colby, a planifie un rendez-vous avec AllSafe Security.
+Vous devez supprimer toute preuve que pourrait avoir decouvert ECorp dans les logs de leur serveur web.
+Si nos connaissances des multinationales sont correctes ils devraient posseder un serveur de depot où ECorp peut garder tous les fichiers relatifs a cette affaire.
+Trouvez ce serveur de depot et supprimer tous les fichiers relatifs a fSociety avant le rendez-vous entre Colby et le personnel d'AllSafe.
+
+Repondez une fois la tache accomplie.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpServ" />
+		<note title="Mission Missing report Goals">Buts :
+- Trouver et obtenir un acces administrateur au serveur de depot
+- Supprimer les fichiers relatifs a fSociety</note>
+    </attachments>
+  </email>
+</mission>

@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet1">
+  <goals>
+	<goal type="FileDownload" target="fSociety" file="fsociety.dat" path="home" />
+	<goal type="getAdmin" target="ECorpWeb"/>
+	<goal type="FileDeletion" target="ECorpWeb" file="index.html" path="web" />
+	<goal type="FileUpload" target="fSociety" file="fsociety.dat" path="home" destTarget="ECorpWeb" destPath="home" />
+
+  </goals>
+  <nextMission>Evil/Continuations/01EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - part 2">
+	Join the conjoint op "TakeDown" with fSociety to shutdown the ECorp network
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Ecorp Webserver</subject>
+    <body>
+#PLAYERNAME#,
+
+Now you've got the file you know your target, Ecorp....
+Ecorp .... it's too long to explain but ... We need you to shutdown the Ecorp webserver.
+You'll find on our server all tools that you might need to support our cause.
+You'll also find a fsociety.dat file in home/ directory.
+
+Gain admin access on their webserver, then delete index.html, when the Ecorp server is down, upload fsociety.dat in their home/, this way we will make them know that they are not untouchable.
+
+Reply when you're done.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpWeb" />
+		<note title="Mission Ecorp Webserver Goals">Goals :
+- Gain admin access on webserver
+- Delete index.html
+- Upload fsociety.dat in home/</note>
+    </attachments>
+  </email>
+</mission>

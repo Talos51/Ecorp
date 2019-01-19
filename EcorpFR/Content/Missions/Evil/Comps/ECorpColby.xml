@@ -1,0 +1,72 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<Computer id="ECorpColby" name="Evil Corp - T. Colby Portable" ip="10.0.0.100" security="4" type="2" icon="laptop" > 
+
+  <!-- Accounts -->
+  <adminPass pass="tcolbycomputer" />
+	
+  <account username="tcolby" password="colbyH4xx0R" type="0" />
+  <!-- Adds an account to this computer.
+  Type represents it's privileges :
+  ADMIN = 0;
+  ALL = 1;
+  MAIL = 2;
+  MISSIONLIST = 3;
+  -->
+
+  <!-- Security Stuff -->
+  <ports>80, 22, 21, 25</ports>
+  <proxy time="2" /> <!-- Proxy server. Set value to -1 to make it disappear -->
+  <portsForCrack val="4" /> <!-- Number of ports to be open to allow porthack to run -->
+  <firewall level="8" solution="Ev1LClb" additionalTime="1.0"/>
+  <trace time="-1" />
+	
+  <!-- Network Stuff -->
+  <dlink target="ECorpDrop" />
+  <dlink target="ECorpMail" />
+	
+  <positionNear target="ECorpDrop" position="1" total="1" />
+  
+	<!-- Files -->
+	<file path="bin" name="install.bin">#BINARYSMALL#</file>
+	<encryptedFile path="home/ECorp" name="ECorp_Report.dec" extension=".txt" ip="10.0.0.15" header="ECorp Rapport #1" pass="Ev1L">
+	Elliot Alderson est un jeune informaticien vivant a New York, qui travaille en tant qu'ingenieur en securite informatique pour Allsafe Security. 
+Luttant constamment avec un trouble d’anxiete sociale et de depression, le processus de pensee d’Elliot semble fortement influence par la paranoïa et l'illusion.
+Il se connecte aux gens en les hackant, ce qui le conduit souvent a agir comme un cyber-justicier.
+
+	Elliot rencontre un mysterieux anarchiste connu sous le nom de « Mr. Robot » qui souhaite le recruter dans son groupe de hackers connu sous le nom de « Fsociety ».
+Leur objectif est de retablir l'equilibre de la societe en detruisant les infrastructures des plus grosses banques et entreprises du monde, notamment le conglomerat E Corp., qui est egalement le plus grand client d’Allsafe Security.
+	</encryptedFile>
+
+	<encryptedFile path="home/ECorp" name="ECorp_Report_Pass.dec" ip="10.0.0.15" header="ECorp mot de passe rapport">
+Je leur ai dit que j'oubliais toujours ce mot de passe pour les rapports... C'est simplement Ev1L ... même un bebe pourrait s'en souvenir pourtant...
+	</encryptedFile>
+  
+	<encryptedFile path="home" name="ECorpBackupStatus.dec" ip="10.0.0.50" header="Steel Mountains Sauvegarde - Status" pass="SteelReport">
+Steel Mountains Sauvegardes - Status
+---------------------------------------------------------
+0. Sauvegarde nom : Ecorp.com
+1. Sauvegarde uptime : 99.98%
+2. Sauvegarde taille : 25288767438848 Kb
+3. Sauvegarde date : 2015/06/24
+---------------------------------------------------------		
+	</encryptedFile>
+
+<!-- Adding this section will create a second computer on load, attached to this
+  which is an eos device, all set up, with these files on it.
+  It'll also automatically generate some apps and save files and things for flavor.-->
+<eosDevice name="T. Colby's ePad 4" id="ColbyEosPad" icon="tablet">
+  <mail username="tcolby@ecorp.com" pass="colbyH4xx0R" />
+  <note>Terry Colby ePad 4 - Ecorp.com </note>
+  <note>Steel Mountains Sauvegarde - Information
+---------------------------------------------------------
+0. Sauvegarde rapport   : EcorpBackupStatus.dec
+1. Sauvegarde mot de passe : SteelReport
+---------------------------------------------------------</note>
+</eosDevice>
+
+</Computer>

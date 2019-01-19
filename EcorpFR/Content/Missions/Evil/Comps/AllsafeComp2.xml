@@ -1,0 +1,27 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<Computer id="allSafeServ2" name="AllSafe Serveur #2" ip="10.50.1.10" security="3" type="3" >
+
+  <!-- Accounts -->
+  <adminPass pass="4Z9Yi8ar7AW" />
+
+
+  <!-- Security Stuff -->
+  <ports>80, 22, 21, 25</ports>
+  <trace time="2.5" />
+  <portsForCrack val="3" />
+  <admin type="fast" resetPassword="true" isSuper="true"/> 
+  
+  <!-- Network Stuff -->
+  <dlink target="allSafeServ" />
+	
+  <positionNear target="allSafeServ" position="1" total="1" />
+  
+  <!-- Files -->
+  <file path="bin" name="install.bin">#BINARYSMALL#</file>
+  <file path="home" name="allsafe.txt">Allsafe Cybersecurity est une entreprise de cybersecurite qui se specialise dans la protection des entreprises importantes, comme ECorp, contre les cyber-attaques.</file>
+</Computer>

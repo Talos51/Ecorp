@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet4">
+  <goals>
+	<goal type="getString" target="10.0.0.50"/>
+  </goals>
+  <nextMission>Evil/Continuations/04EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown avec fSociety - partie 5">
+	Rejoignez l'operation "TakeDown" avec fSociety pour mettre un terme au reseau d'ECorp
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Sauvegardes hors-ligne </subject>
+    <body>
+#PLAYERNAME#,
+
+Ils doivent avoir des sauvegardes hors-ligne... Vous devez trouver l'adresse IP de leur service de sauvegarde !
+Terry Colby, le Directeur de la Technologie, il devrait avoir cette adresse sur son ordinateur ou son terminal eOS.
+
+Repondez avec l'adresse une fois la tache accomplie.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpServ" />
+		<note title="Mission Offline Backup Goals">Buts :
+- Trouver et obtenir un acces administrateur aux terminaux de Colby
+- Trouver l'adresse IP des sauvegardes Steel Mountains
+- Repondre avec l'adresse IP</note>
+    </attachments>
+  </email>
+</mission>

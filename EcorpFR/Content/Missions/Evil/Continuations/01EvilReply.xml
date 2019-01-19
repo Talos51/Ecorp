@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet1_rep" activeCheck="true">
+  <goals>
+  </goals>
+  <nextMission>Evil/02EvilContract.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown avec fSociety - partie 2">
+	Rejoignez l'operation "TakeDown" avec fSociety pour mettre un terme au reseau d'ECorp
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>RE: OP TakeDown - Serveur web ECorp SUCCES</subject>
+    <body>
+Bien joue #PLAYERNAME#,
+
+Maintenant que leur serveur web est hors service nous pouvons cibler leur serveur central ! Vous recevrez rapidement votre prochaine mission !
+
+-fSociety
+    </body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

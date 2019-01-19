@@ -1,0 +1,29 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<Computer id="ECorpDrop" name="Evil Corp Seveur de depot" security="5" ip="10.0.0.25" type="3">
+
+  <adminPass pass="2kwNFasFMe" />
+  
+  <ports>80, 22, 21</ports>
+  <portsForCrack val="3" /> <!-- Number of ports to be open to allow porthack to run -->
+  <trace time="100" />
+  <uploadServerDaemon name="ECorp Dropbox" folder="Drop" needsAuth="true" color="204,116,212"/> -->
+	<!-- This is a special sort of server that allows you to upload files to it without admin permissions -->
+  
+  <!-- Files -->
+  <file path="Drop/Uploads" name="ECorp_Report.err">#BINARYSMALL#</file>
+
+  <dlink target="ECorpServ" />
+  <dlink target="ECorpColby" />
+
+  <positionNear target="ECorpServ" position="10" total="2" />
+	<!-- This positions this computer near the target on the network map
+		Position is it's position radially around it, and total is the 
+		number of radially surrounding nodes it has - this way you can create
+	cool looking networks-->
+
+</Computer>

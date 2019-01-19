@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet5">
+  <goals>
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Content.xnb" path="ARCHIVE/ECorp/28-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Content.xnb" path="ARCHIVE/ECorp/14-12" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Content.xnb" path="ARCHIVE/ECorp/21-09" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorpDatabase.sql" path="ARCHIVE/ECorp/27-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorpDatabase.sql" path="ARCHIVE/ECorp/13-12" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorpDatabase.sql" path="ARCHIVE/ECorp/20-09" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/26-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/12-12" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/19-09" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_Files.zip" path="ARCHIVE/ECorp/26-05" />
+	<goal type="FileDeletion" target="ECorpOfflineBackup" file="ECorp_mediakit.zip" path="ARCHIVE/Misc" />
+  </goals>
+  <nextMission>Evil/Continuations/05EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - partie finale">
+	Rejoignez l'operation "TakeDown" avec fSociety pour mettre un terme au reseau d'ECorp
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Frappe finale sur Steel Mountains </subject>
+    <body>
+#PLAYERNAME#,
+
+Nous devons frapper une derniere fois. Supprimer toute trace restante du reseau ECorp... Nous devons faire tomber leur service de sauvegarde connu sous le nom de "Steel Mountains".
+
+Repondez une fois la tache accomplie.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpOfflineBackup" />
+		<note title="Mission Steel Mountains Goals">Buts :
+- Obtenir un acces administrateur a Steel Mountains
+- Supprimer les fichiers restants d'ECorp
+- Repondre</note>
+    </attachments>
+  </email>
+</mission>
