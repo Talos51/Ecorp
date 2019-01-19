@@ -4,7 +4,7 @@ Ecorp is a custom Mr. Robot network and missions for the game Hacknet.
 
   - Author: Talos
   - Contact: Twitter @Talos51
-  - Website: http://www.private-ts.tk
+  - Website: https://www.private-ts.tk
 
 For more information about Hacknet, go to the official website at http://hacknet-os.com/
 
