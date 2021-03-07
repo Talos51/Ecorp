@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet1">
+  <goals>
+	<goal type="FileDownload" target="fSociety" file="fsociety.dat" path="home" />
+	<goal type="getAdmin" target="ECorpWeb"/>
+	<goal type="FileDeletion" target="ECorpWeb" file="index.html" path="web" />
+	<goal type="FileUpload" target="fSociety" file="fsociety.dat" path="home" destTarget="ECorpWeb" destPath="home" />
+
+  </goals>
+  <nextMission>Evil/Continuations/01EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - part 2">
+	ECorp ağını kapatmak için fSociety ile birleşik "TakeDown" operasyonuna katılın
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Ecorp Webserver</subject>
+    <body>
+#PLAYERNAME#,
+
+Artık hedefini bildiğin dosyaya sahipsin, Ecorp ...
+Ecorp... açıklaması çok uzun ama... Ecorp web sunucusunu kapatmanız gerekiyor.
+Amacımızı desteklemek için ihtiyaç duyabileceğiniz tüm araçları sunucumuzda bulacaksınız.
+Ayrıca home/ directory'de bir fsociety.dat dosyası bulacaksınız.
+
+Web sunucusunda yönetici erişimi kazanın, ardından index.html'yi silin, Ecorp sunucusu kapalıyken, home/ dizinine fsociety.dat dosyasını yükleyin, bu şekilde onlara dokunulmaz olmadıklarını bildireceğiz.
+
+Bitirdiğinizde yanıtlayın.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpWeb" />
+		<note title="Mission Ecorp Webserver Goals">Hedefler :
+- Web sunucusunda yönetici erişimi kazanın
+- index.html dosyasını sil
+- Fsociety.dat dosyasını home/ dizinine yükleyin</note>
+    </attachments>
+  </email>
+</mission>

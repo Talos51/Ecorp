@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet2_rep" activeCheck="true">
+  <goals>
+  </goals>
+  <!-- <missionEnd val="1">addRank</missionEnd> -->
+  <nextMission>Evil/03EvilContract.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - part 3">
+	ECorp ağını kapatmak için fSociety ile birleşik "TakeDown" operasyonuna katılın  
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>RE: OP TakeDown - Ecorp Hub Server BAŞARILI</subject>
+    <body>
+Tebrikler #PLAYERNAME#,
+
+Artık ağlarına doğrudan erişimimiz var. Kısa süre içinde iyi iş çıkardınız! Bir sonraki ödevinizi alacaksınız!
+
+-fSociety
+    </body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>
