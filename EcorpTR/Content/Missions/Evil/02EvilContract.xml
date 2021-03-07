@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet2">
+  <goals>
+	<goal type="getString" target="hLuOj85Esp"/>
+  </goals>
+  <nextMission>Evil/Continuations/02EvilReply.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - part 3">
+	ECorp ağını kapatmak için fSociety ile birleşik "TakeDown" operasyonuna katılın
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>OP TakeDown - Ecorp Hub</subject>
+    <body>
+#PLAYERNAME#,
+
+Ecorp web sunucusu buzdağının yalnızca görünen kısmıydı, hub sunucuları hala çalışıyor ve Ecorp ağının ne kadar büyük olduğunu keşfetmek için bir yönetici erişimi kazanmamız gerekiyor.
+Ecorp merkezini bulmak ve yönetici erişimi elde etmek için Ecorp web sunucusundan daha derine inmeye çalışın ve ardından bize şifreyi verin.
+
+İşiniz bittiğinde yönetici şifresiyle yanıtlayın.
+
+-fSociety
+    </body>
+    <attachments>
+		<link comp="ECorpWeb" />
+		<note title="Mission Ecorp Hub Goals">Hedefler :
+- Ecorp hub Sunucusunda yönetici erişimi kazanın
+- Yönetici şifresiyle bu maili yanıtlayın</note>
+    </attachments>
+  </email>
+</mission>

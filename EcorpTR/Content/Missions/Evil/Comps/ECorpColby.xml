@@ -1,0 +1,71 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+  -->
+  <Computer id="ECorpColby" name="Evil Corp - T. Colby's Laptop" ip="10.0.0.100" security="4" type="2" icon="laptop" > 
+
+    <!-- Accounts -->
+    <adminPass pass="tcolbycomputer" />
+
+    <account username="tcolby" password="colbyH4xx0R" type="0" />
+  <!-- Adds an account to this computer.
+  Type represents it's privileges :
+  ADMIN = 0;
+  ALL = 1;
+  MAIL = 2;
+  MISSIONLIST = 3;
+-->
+
+<!-- Security Stuff -->
+<ports>80, 22, 21, 25</ports>
+<proxy time="2" /> <!-- Proxy server. Set value to -1 to make it disappear -->
+<portsForCrack val="4" /> <!-- Number of ports to be open to allow porthack to run -->
+<firewall level="8" solution="Ev1LClb" additionalTime="1.0"/>
+<trace time="-1" />
+
+<!-- Network Stuff -->
+<dlink target="ECorpDrop" />
+<dlink target="ECorpMail" />
+
+<positionNear target="ECorpDrop" position="1" total="1" />
+
+<!-- Files -->
+<file path="bin" name="install.bin">#BINARYSMALL#</file>
+<encryptedFile path="home/ECorp" name="ECorp_Report.dec" extension=".txt" ip="10.0.0.15" header="ECorp Report #1" pass="Ev1L">
+	Dizi, Allsafe'de siber güvenlik mühendisi olarak çalışan New York'ta yaşayan genç Elliot Alderson'u konu alıyor.
+  Elliot sosyal kaygı bozukluğuna sahiptir, ancak insanları hackleyerek onlarla bağlantı kurar ve bir hacker olarak hareket eder.
+
+  "Mr Robot" olarak bilinen gizemli bir sosyal-anarşist tarafından işe alınır ve "fsociety" olarak bilinen bilgisayar korsanları ekibine katılır.
+  Görevlerinden biri, dünyanın en büyük şirketlerinden biri olan E Corp'u (Elliot tarafından "Evil Corp" olarak bilinir) alaşağı etmektir, bu şirket Elliot'un koruması için ücret alır.
+</encryptedFile>
+
+<encryptedFile path="home/ECorp" name="ECorp_Report_Pass.dec" ip="10.0.0.15" header="ECorp Report Password">
+  Onlara raporların şifresini her zaman unuttuğumu söyledim... basitçe Ev1L... bebekler bile hatırlayabilir...
+</encryptedFile>
+
+<encryptedFile path="home" name="ECorpBackupStatus.dec" ip="10.0.0.50" header="Steel Mountains Backup - Status" pass="SteelReport">
+ Steel Mountains Yedeklemesi - Durum
+  ---------------------------------------------------------
+  0. Yedekleme adı : Ecorp.com
+  1. Yedekleme çalışma süresi : 99.98%
+  2. Yedekleme boyutu : 25288767438848 Kb
+  3. Yedekleme tarihi : 2015/06/24
+  ---------------------------------------------------------		
+</encryptedFile>
+
+<!-- Adding this section will create a second computer on load, attached to this
+  which is an eos device, all set up, with these files on it.
+  It'll also automatically generate some apps and save files and things for flavor.-->
+  <eosDevice name="T. Colby's ePad 4" id="ColbyEosPad" icon="tablet">
+    <mail username="tcolby@ecorp.com" pass="colbyH4xx0R" />
+    <note>Terry Colby ePad 4 - Ecorp.com </note>
+    <note>Steel Mountains Yedekleme - Bilgi
+      ---------------------------------------------------------
+      0. Yedekleme raporu   : EcorpBackupStatus.dec
+      1. Yedekleme şifresi : SteelReport
+      ---------------------------------------------------------</note>
+    </eosDevice>
+
+  </Computer>
