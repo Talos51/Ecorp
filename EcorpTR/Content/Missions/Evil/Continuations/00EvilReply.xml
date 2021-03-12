@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSet0_rep" activeCheck="true">
+  <goals>
+  </goals>
+  <!-- <missionEnd val="1">addRank</missionEnd> -->
+  <nextMission>Evil/01EvilContract.xml</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety">
+	ECorp ağını kapatmak için fSociety ile birleşik "TakeDown" operasyonuna katılın  
+  </posting>
+  <email>
+    <sender>fSociety</sender>
+    <subject>RE: OP TakeDown - İlk Temas BAŞARILI</subject>
+    <body>
+Tebrikler #PLAYERNAME#,
+
+Sistemimiz "home/target.txt" nin bir kopyasını tespit etti umalım doğru kişisinizdir...
+Almak üzere olduğunuz bir sonraki posta size daha fazla bilgi verecektir. FSociety'ye hoş geldiniz ...
+
+-fSociety
+    </body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

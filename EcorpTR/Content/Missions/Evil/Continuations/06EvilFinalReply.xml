@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ ** Mr. Robot Hacknet Custom Network by Talos. **
+		** Don't remove this header **
+		** http://private-ts.tk/	**
+-->
+<mission id="evilSe6_rep" activeCheck="true">
+  <goals>
+  </goals>
+  <nextMission>NONE</nextMission>
+  <posting title="[ECorp] OP TakeDown with fSociety - credits">
+	ECorp ağını kapatmak için fSociety ile birleşik "TakeDown" operasyonuna katılın	  
+  </posting>
+  <email>
+    <sender>Talos</sender>
+    <subject>OP TakeDown - Thanks</subject>
+    <body>
+Teşekkürler #PLAYERNAME#,
+
+Umarım bu modu beğenmişsinizdir. Bana teşekkür etmek isterseniz, bug'ları veya görüş ve önerilerinizi bana bildirebilirsiniz talos@private-ts.tk ya da beni Twitter'dan takip edebilirsiniz @Talos51 .
+
+# PLAYERNAME # oynadığınız için bir kez daha teşekkürler!
+
+-Talos
+
+ÇEVİRİ : BARIŞ ÖMER DÖNGEL - mirdijital.com
+
+
+ == CREDITS ==
+ 
+ Mr. Robot Hacknet Custom Network v0.4 by Talos.
+ ** http://private-ts.tk **
+ ** Steam Hacknet Modding Group : http://steamcommunity.com/groups/HacknetMod **
+
+    </body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>
