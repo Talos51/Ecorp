@@ -15,11 +15,13 @@ For more information about Hacknet, go to the official website at http://hacknet
 ### Installation
 
 - Simply copy Content/ to Hacknet/ root folder.
-- Choose between English (Ecorp) and French (EcorpFR) version of the mod.
+- Choose between English (Ecorp), Turkish (EcorpTR) and French (EcorpFR) version of the mod.
 
 # Development
 
 Want to contribute? Great! Just fork the project and improve it, don't forget to get me in touch since it's always nice to know that the project is alive :)
+
+- Turkish translation by : [Barisdongel](https://github.com/barisdongel)
 
 ### Todos
 
